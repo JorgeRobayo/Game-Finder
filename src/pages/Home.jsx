@@ -36,9 +36,18 @@ function Home() {
             </ul>
           </section>
 
-        <section>
+        <section className="whyGmFndr">
           <h3>Why Game Finder</h3>
+          <p>~ Aren't you tired of intrusive ads that take all your screen?
+            Here we are ad-friendly.
+          </p>
+          
+          <p>~ We have a user friendly Interface</p>
+
+          <p>~ Reliable Information</p>
         </section>
+
+        
       </div>
     </div>
   );
