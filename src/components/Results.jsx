@@ -1,7 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { useContext } from 'react'
+import { dataContext } from './Context'
 
 function Results(props) {
+    const {currentData, setCurrentData} = useContext(dataContext)
+
   return (
     <div>
         <ul>
@@ -9,12 +13,11 @@ function Results(props) {
                 props.gameResults.map(game => (
                     <li key={game.id}>
 
-                        <Link to={{
-                            pathname: `/game/${game.name}`,
-                            gameProps:{
-                                game: game
-                            }
+                        <Link to="/gamedisplay" onClick={() => {
+                            setCurrentData(game)
+                            console.log(currentData)
                         }}>
+                        
 
                         <h3>{game.name}</h3>
                         <img src={game.background_image} alt="game" />

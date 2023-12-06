@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import Results from "./Results";
+import { useEffect } from "react";
 
 function SearchBar() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -25,6 +26,12 @@ function SearchBar() {
 
     setSearchTerm("");
   };
+
+  console.log(gameResults)
+
+  useEffect(() => {
+
+  }, [])
 
   return (
     <div className="searchBar">
