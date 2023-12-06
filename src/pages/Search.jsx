@@ -4,9 +4,14 @@ import SearchBar from "../components/SearchBar";
 function Search() {
   return (
     <div>
-        <SearchBar/>
+        
 
-      <h1>Search Page</h1>
+      <section>
+        <h1>Search Page</h1>
+        <SearchBar/>
+      </section>
+
+      
       <h2>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem
         praesentium, laboriosam officia sint est eum temporibus, dolorum esse

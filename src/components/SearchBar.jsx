@@ -20,7 +20,7 @@ function SearchBar() {
       .then((resp) => resp.json())
       .then(({ results }) => {
         results === undefined
-          ? alert("Papi/Mami, no games found")
+          ? alert("No games found")
           : setGameResults(results);
       });
 
