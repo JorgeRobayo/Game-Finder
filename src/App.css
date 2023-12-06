@@ -3,6 +3,7 @@
     --platinium: #D8DBE2;
     --powder-blue:#A9BCD0;
     --moonstone: #58A4B0;
+    --light-charcoal: #475066;
     --charcoal: #373F51;
     --eerie-black: #1B1B1E;
 }
@@ -44,6 +45,26 @@ body{
     font-weight: 450;
     font-size: 18px;
     color: var(--platinium);
+}
+
+.homeImg{
+    width: 350px;
+    border-radius: 10px;
+}
+
+.relevantInfoList{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.whtIsGmFndr{
+    background-color: var(--light-charcoal);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
 }
 
 }
