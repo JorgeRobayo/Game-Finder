@@ -29,9 +29,7 @@ function SearchBar() {
 
   console.log(gameResults)
 
-  useEffect(() => {
 
-  }, [])
 
   return (
     <div className="searchBar">

@@ -15,7 +15,7 @@ function App() {
         <Route path="/" element={<Home />}></Route>
         <Route path="/search" element={<Search/>}></Route>
         {/* <Route path="/game/:name" element={<GameDetails/>}></Route> */}
-        <Route path="/gamedisplay" element={<GameDetails/>}></Route>
+        <Route path="/gamedetails" element={<GameDetails/>}></Route>
       </Routes>
 
     </div>

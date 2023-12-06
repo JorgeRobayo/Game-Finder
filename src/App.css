@@ -74,6 +74,32 @@ body{
     margin: 5px;
 }
 
+/* -----{SEARCH PAGE}----- */
+
+.search{
+    color: var(--platinium);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/* -----{RESULTS}---- */
+
+.gameImg{
+    width: 200px;
+}
+
+.gameContainer{
+overflow-x: scroll;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+width: 500px;
+height: 200px;
+
+}
+
 }
 
 
