@@ -1,4 +1,61 @@
-.nav{
+/* Here is the color palete that I will be using */
+:root{
+    --platinium: #D8DBE2;
+    --powder-blue:#A9BCD0;
+    --moonstone: #58A4B0;
+    --charcoal: #373F51;
+    --eerie-black: #1B1B1E;
+}
+
+/* -----------------{BODY}---------------------------- */
+
+body{
+    background-color: var(--eerie-black);
+}
+
+
+/* ----------------{Phone Display-------------------------- */
+
+@media screen and (max-width: 880px) {
+    .nav{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: var(--charcoal);
+    padding: 20px;
+    border-radius: 10px;
 }
+
+.nav a {
+    color: var(--platinium);
+    text-decoration: none;
+    font-weight: 550;
+    font-size: 20px;
+}
+
+.homeInfo{
+    text-align: center;
+    font-weight: 450;
+    color: var(--platinium);
+}
+
+.homeInfo p {
+    text-align: center;
+    font-weight: 450;
+    font-size: 18px;
+    color: var(--platinium);
+}
+
+}
+
+
+
+
+
+/* ------------------{HOME PAGE}---------------------------- */
+
+
+
+
+
+
