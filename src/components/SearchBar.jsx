@@ -15,7 +15,7 @@ function SearchBar() {
     let slug = searchTerm.split(" ").join("-").toLowerCase();
 
     setGameResults([]);
-    fetch(`https://api.rawg.io/api/games?search=${slug}`)
+    fetch(`https://api.rawg.io/api/games?search=${slug}&key=270a250046034f97a6940f3241a34200`)
       .then((resp) => resp.json())
       .then(({ results }) => {
         results === undefined
