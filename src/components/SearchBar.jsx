@@ -3,6 +3,7 @@ import { useState } from "react";
 import Results from "./Results";
 import { useEffect } from "react";
 
+
 function SearchBar() {
   const [searchTerm, setSearchTerm] = useState("");
   const [gameResults, setGameResults] = useState([]);

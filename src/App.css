@@ -105,7 +105,7 @@ body{
 }
 
 .gameContainer{
-overflow-x: scroll;
+overflow-x: auto;
 display: flex;
 flex-direction: row;
 justify-content: space-around;

@@ -2,8 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { dataContext } from "./Context";
-import Carousel from 'react-multi-carousel'
-import 'react-multi-carousel/lib/styles.css'
+
 
 function Results(props) {
   const { currentData, setCurrentData } = useContext(dataContext);
