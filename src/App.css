@@ -79,15 +79,29 @@ body{
 .search{
     color: var(--platinium);
     text-align: center;
-    display: flex;
+    display: flex;align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
+}
+
+.srchImg{
+    width: 200px;
+    border-radius: 10px;
+}
+
+/* -------{SEARCH BAR}------ */     
+
+.searchBar{
+    margin-top: 15px;
+    
 }
 
 /* -----{RESULTS}---- */
 
 .gameImg{
     width: 200px;
+    border-radius: 10px;
+    margin: 15px;
 }
 
 .gameContainer{
@@ -100,11 +114,39 @@ height: 200px;
 
 }
 
+
+
+
 /* -------{GAME DETAILS}---- */
 
 .gmScrsht{
     width: 200px;
+    border-radius: 10px;
+    margin: 15px;
 }
+
+.gmDetails{
+    color: var(--platinium);
+}
+
+.mstrSection{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 10px 10px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.gmRlsdDate, .gmRtng, .gmGnrs, .gmPltfrm, .gmStrs{
+    margin: 20px 10px;
+    background-color: var(--light-charcoal);
+    border-radius: 10px;
+    padding: 5px 20px;
+
+}
+
+
 
 }
 

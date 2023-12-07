@@ -8,49 +8,51 @@ function GameDetails(props) {
   const { currentData, setCurrentData } = useContext(dataContext);
 
   return (
-    <div>
+    <div className="gmDetails">
       <section className="gmName">
         <h1>{currentData.name}</h1>
       </section>
 
-      <h3>Game Screenshots</h3>
       <section>
+        <h3>Game Screenshots</h3>
         {currentData.short_screenshots.map((ss) => (
           <div className="gmScrshtDiv">
             <img className="gmScrsht" src={ss.image} alt="screenshot" />
           </div>
         ))}
       </section>
-      
-      <section className="gmRlsdDate">
-        <h3>Released</h3>
-        <p>{currentData.released}</p>
-      </section>
 
-      <section className="gmRtng">
-        <h3>Rating</h3>
-        <p>{currentData.rating}</p>
-      </section>
+      <section className="mstrSection">
+        <section className="gmRlsdDate">
+          <h3>Released</h3>
+          <p>{currentData.released}</p>
+        </section>
 
-      <section className="gmGnrs">
-        <h3>Genere(s)</h3>
-        <div className="gmGnrsMap">
-          {currentData.genres.map((g) => `${g.name} | `)}
-        </div>
-      </section>
+        <section className="gmRtng">
+          <h3>Rating</h3>
+          <p>{currentData.rating}</p>
+        </section>
 
-      <section className="gmPltfrm">
-        <h3>Platform(s)</h3>
-        <div className="gmPltfrmMap">
-          {currentData.platforms.map((p) => `${p.platform.name}`)}
-        </div>
-      </section>
+        <section className="gmGnrs">
+          <h3>Genere(s)</h3>
+          <div className="gmGnrsMap">
+            {currentData.genres.map((g) => `${g.name} | `)}
+          </div>
+        </section>
 
-      <section className="gmStrs">
-        <h3>Stores</h3>
-        <div className="gmStrsMap">
-          {currentData.stores.map((str) => `${str.store.name} | `)}
-        </div>
+        <section className="gmPltfrm">
+          <h3>Platform(s)</h3>
+          <div className="gmPltfrmMap">
+            {currentData.platforms.map((p) => `${p.platform.name}`)}
+          </div>
+        </section>
+
+        <section className="gmStrs">
+          <h3>Stores</h3>
+          <div className="gmStrsMap">
+            {currentData.stores.map((str) => `${str.store.name} | `)}
+          </div>
+        </section>
       </section>
     </div>
   );
