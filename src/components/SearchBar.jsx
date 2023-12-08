@@ -28,6 +28,8 @@ function SearchBar() {
     setSearchTerm("");
   };
 
+
+
   console.log(gameResults)
 
 
