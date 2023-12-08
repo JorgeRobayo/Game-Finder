@@ -60,6 +60,11 @@ body{
         font-weight: 550;
         font-size: 20px;
     }
+
+    .nav a:hover{
+       color: var(--light-moonstone);
+    
+    }
     
     .homeInfo{
         text-align: center;
@@ -339,6 +344,17 @@ body{
             
             
         }
+
+        .gmScrshtDiv{
+            justify-content: center;
+            overflow-x: auto;
+            display: flex;
+            width: 100%;
+            }
+            
+            .gmDetails{
+                text-align: center;
+            }
         
         }
         
