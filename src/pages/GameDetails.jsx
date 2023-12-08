@@ -17,7 +17,9 @@ function GameDetails(props) {
         <h3>Game Screenshots</h3>
         {currentData.short_screenshots.map((ss) => (
           <div className="gmScrshtDiv">
-            <img className="gmScrsht" src={ss.image} alt="screenshot" />
+            <div>
+              <img className="gmScrsht" src={ss.image} alt="screenshot" />
+            </div>
           </div>
         ))}
       </section>

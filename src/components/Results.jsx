@@ -9,8 +9,8 @@ function Results(props) {
   
 
   return (
-    <div >
-      <section className="gamesContainer">
+    <div className="masterGmContainer">
+      <div className="gamesContainer">
         {props.gameResults.map((game) => (
           <div key={game.id}>
             <Link
@@ -26,12 +26,12 @@ function Results(props) {
                     src={game.background_image}
                     alt="game"
                   />
-                  <h3>{game.name}</h3>
+                  <h3 className="gmNameRslts">{game.name}</h3>
               </section>
             </Link>
           </div>
         ))}
-      </section>
+      </div>
     </div>
   );
 }
