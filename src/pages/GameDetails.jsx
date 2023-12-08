@@ -12,11 +12,11 @@ function GameDetails(props) {
       <section className="gmName">
         <h1>{currentData.name}</h1>
       </section>
-
-      <section>
-        <h3>Game Screenshots</h3>
+      
+      <h3>Game Screenshots</h3>
+      <section className="gmScrshtDiv">
         {currentData.short_screenshots.map((ss) => (
-          <div className="gmScrshtDiv">
+          <div>
             <div>
               <img className="gmScrsht" src={ss.image} alt="screenshot" />
             </div>
@@ -56,13 +56,12 @@ function GameDetails(props) {
           </div>
         </section>
 
-          {/* <section className="gmDscrptn">
+        {/* <section className="gmDscrptn">
             <h3>Description</h3>
             <p>
               {currentData.description}
             </p>
           </section> */}
-
       </section>
     </div>
   );
