@@ -10,7 +10,7 @@ function Results(props) {
 
   return (
     <div >
-      <section className="gameContainer">
+      <section className="gamesContainer">
         {props.gameResults.map((game) => (
           <div key={game.id}>
             <Link
@@ -20,7 +20,7 @@ function Results(props) {
                 console.log(currentData);
               }}
             >
-              <section>
+              <section className="gmCard">
                   <img
                     className="gameImg"
                     src={game.background_image}

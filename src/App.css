@@ -1,7 +1,9 @@
 /* Here is the color palete that I will be using */
 :root{
+    --smooth-blue: #c8d8ff;
     --platinium: #D8DBE2;
     --powder-blue:#A9BCD0;
+    --light-moonstone: #74c3cf;
     --moonstone: #58A4B0;
     --light-charcoal: #475066;
     --charcoal: #373F51;
@@ -20,8 +22,26 @@ body{
     }
 
 
+    ::-webkit-scrollbar-track{
+        box-shadow: inset 0 0 3px var(--moonstone);
+    }
+
     ::-webkit-scrollbar-thumb{
         background: var(--moonstone);
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover{
+        background: var(--light-moonstone);
+        
+    }
+
+    .gameContainer::-webkit-scrollbar-thumb{
+        background: var(--smooth-blue);
+    }
+
+    .gameContainer::-webkit-scrollbar-track{
+        box-shadow: none;
     }
 /* ----------------{Phone Display-------------------------- */
 
@@ -97,21 +117,21 @@ body{
     border-radius: 10px;
 }
 
-.gameContainer{
+.gamesContainer{
 overflow-x: auto;
 overflow-y: hidden;
 display: flex;
 flex-direction: row;
 justify-content: space-around;
-width:650px; 
-height: 200px;
+width: 550px; 
+height: 300px;
+/* background-color: #A9BCD0; */
 
 }
 /* -------{SEARCH BAR}------ */     
 
 .searchBar{
     margin-top: 15px;
-    
 }
 
 /* -----{RESULTS}---- */
@@ -122,9 +142,11 @@ height: 200px;
     margin: 15px;
 }
 
-
-
-
+.gmCard{
+    background-color: aliceblue;
+    margin: 15px 10px;
+    border-radius: 10px;
+}
 
 
 /* -------{GAME DETAILS}---- */
@@ -155,6 +177,7 @@ height: 200px;
     padding: 5px 20px;
 
 }
+
 
 
 

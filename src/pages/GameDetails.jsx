@@ -53,6 +53,14 @@ function GameDetails(props) {
             {currentData.stores.map((str) => `${str.store.name} | `)}
           </div>
         </section>
+
+          <section className="gmDscrptn">
+            <h3>Description</h3>
+            <p>
+              {currentData.description}
+            </p>
+          </section>
+
       </section>
     </div>
   );
