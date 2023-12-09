@@ -1,13 +1,13 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import Results from "./Results";
-import { useContext } from "./Context";
+import { dataContext } from "./Context";
 
 
 function SearchBar() {
   const [searchTerm, setSearchTerm] = useState("");
   const [gameResults, setGameResults] = useState([]);
-  const { setCurrentData} = useContext{dataContext}
+  const { setCurrentData} = useContext(dataContext)
 
   const handleChange = (e) => {
     setSearchTerm(e.target.value);
@@ -35,6 +35,7 @@ function SearchBar() {
     const detailedInfo = await getGmDescription(game.id)
 
     setCurrentData(detailedInfo)
+    console.log('gameinfo', detailedInfo)
   }
 
   const getGmDescription = async (gameId) => {
@@ -42,15 +43,16 @@ function SearchBar() {
 
     try {
       const response = await fetch(url);
-      const gameDescResult = wait response.json();
+      const gameDescResult = await response.json();
 
       return gameDescResult;
       }catch (error) {
-        console.log('rerror:', error)
+        console.log('error:', error)
       }
   };
  
   console.log(gameResults);
+ 
 
   return (
     <div>
