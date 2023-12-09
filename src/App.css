@@ -96,14 +96,14 @@ body{
         background-color: var(--light-charcoal);
         border-radius: 10px;
         padding: 10px;
-        margin: 5px;
+        margin: 10px;
     }
     
     .whyGmFndr{
         background-color: var(--charcoal);
         border-radius: 10px;
         padding: 10px;
-        margin: 5px;
+        margin: 10px;
     }
     
     /* -----{SEARCH PAGE}----- */
@@ -225,6 +225,11 @@ body{
             font-size: 20px;
         }
         
+        .nav a:hover{
+            color: var(--light-moonstone);
+         
+         }
+
         .homeInfo{
             text-align: center;
             font-weight: 450;
@@ -255,14 +260,14 @@ body{
             background-color: var(--light-charcoal);
             border-radius: 10px;
             padding: 10px;
-            margin: 5px;
+            margin: 10px;
         }
         
         .whyGmFndr{
             background-color: var(--charcoal);
             border-radius: 10px;
             padding: 10px;
-            margin: 5px;
+            margin: 10px;
         }
         
         /* -----{SEARCH PAGE}----- */

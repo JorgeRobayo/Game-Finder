@@ -12,7 +12,7 @@ function GameDetails(props) {
       <section className="gmName">
         <h1>{currentData.name}</h1>
       </section>
-      
+
       <h3>Game Screenshots</h3>
       <section className="gmScrshtDiv">
         {currentData.short_screenshots.map((ss) => (
@@ -45,7 +45,7 @@ function GameDetails(props) {
         <section className="gmPltfrm">
           <h3>Platform(s)</h3>
           <div className="gmPltfrmMap">
-            {currentData.platforms.map((p) => `${p.platform.name}`)}
+            {currentData.platforms.map((p) => `${p.platform.name} | `)}
           </div>
         </section>
 
