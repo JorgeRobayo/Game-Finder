@@ -32,7 +32,7 @@ function SearchBar() {
   };
   
   const handleGame = async (game) => {
-    const detailedInfo = await getGmDescription(game.id)
+    const detailedInfo = await getGmDescription(game.Id)
 
     setCurrentData(detailedInfo)
     console.log('gameinfo', detailedInfo)
@@ -44,12 +44,18 @@ function SearchBar() {
 
     try {
       const response = await fetch(url);
-      if (!response)
+
+      if (!response.ok){
+        throw new Error(`request error ${response.status}`)
+      }
       const gameDescResult = await response.json();
+
+      console.log('API response', gameDescResult)
 
       return gameDescResult;
       }catch (error) {
-        console.log('error:', error)
+        console.error('error:', error)
+        return null
       }
   };
  

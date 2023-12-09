@@ -3,10 +3,8 @@ import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { dataContext } from "./Context";
 
-
 function Results(props) {
   const { currentData, setCurrentData } = useContext(dataContext);
-  
 
   return (
     <div className="masterGmContainer">
@@ -21,12 +19,12 @@ function Results(props) {
               }}
             >
               <section className="gmCard">
-                  <img
-                    className="gameImg"
-                    src={game.background_image}
-                    alt="game"
-                  />
-                  <h3 className="gmNameRslts">{game.name}</h3>
+                <img
+                  className="gameImg"
+                  src={game.background_image}
+                  alt="game"
+                />
+                <h3 className="gmNameRslts">{game.name}</h3>
               </section>
             </Link>
           </div>
