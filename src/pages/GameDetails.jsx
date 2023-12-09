@@ -56,12 +56,13 @@ function GameDetails(props) {
           </div>
         </section>
 
-        {/* <section className="gmDscrptn">
+        <section className="gmDscrptn">
             <h3>Description</h3>
             <p>
-              {currentData.description}
+              {console.log(currentData)}
+              {currentData.description} 
             </p>
-          </section> */}
+          </section>
       </section>
     </div>
   );

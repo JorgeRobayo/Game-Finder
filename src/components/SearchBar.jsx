@@ -36,6 +36,7 @@ function SearchBar() {
 
     setCurrentData(detailedInfo)
     console.log('gameinfo', detailedInfo)
+    console.log('hello world')
   }
 
   const getGmDescription = async (gameId) => {
@@ -43,6 +44,7 @@ function SearchBar() {
 
     try {
       const response = await fetch(url);
+      if (!response)
       const gameDescResult = await response.json();
 
       return gameDescResult;
@@ -51,7 +53,7 @@ function SearchBar() {
       }
   };
  
-  console.log(gameResults);
+  // console.log(gameResults);
  
 
   return (
