@@ -10,10 +10,12 @@ function Nav() {
         <div>Home</div>
       </Link>
 
-      
-
       <Link to="/search">
         <div>Search</div>
+      </Link>
+
+      <Link to="/topgames">
+        <div>Top Games</div>
       </Link>
 
 
