@@ -13,13 +13,33 @@ function SearchBar() {
     setSearchTerm(e.target.value);
   };
 
-  const onSubmit = (e) => {
+  const onSubmit = async (e) => {
     e.preventDefault();
     let slug = searchTerm.split(" ").join("-").toLowerCase();
 
     setGameResults([]);
     
-    
+    try{
+      const response = await fetch (
+        `https://api.rawg.io/api/games?search=${slug}&key=270a250046034f97a6940f3241a34200`
+      );
+
+      const {results} = await response.json();
+
+      if (results === undefined) {
+
+        alert("No Games Found")
+
+      } else {
+        setGameResults(results)
+        const gameId = results.Id
+        await getGmDescription(gameId)
+      }
+
+    } catch (error) {
+      console.error(`Error fetching results`, error)
+    }
+  
 
     setSearchTerm("");
   };
@@ -41,16 +61,15 @@ function SearchBar() {
       if (!response.ok){
         throw new Error(`request error ${response.status}`)
       }
-      const gameDescResult = await response.json();
 
+      const gameDescResult = await response.json();
       console.log('API response', gameDescResult)
 
-      return gameDescResult;
-      }catch (error) {
-        console.error('error:', error)
-        return null
-      }
-  };
+      setCurrentData(gameDescResult)
+  } catch (error) {
+    console.error('error getting gme details:', error)
+  }
+};
  
   console.log(gameResults);
  
