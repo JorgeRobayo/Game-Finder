@@ -187,12 +187,14 @@ body {
   .gmDetails {
     text-align: center;
   }
+/* {Top Games Page} */
+  
 
-  /* {Top Games Page} */
+  topGmsMstrDiv
 
   .topGmsTitle {
     text-align: center;
-    color: var(--platinium);
+    /* color: var(--platinium); */
   }
 }
 
@@ -370,5 +372,25 @@ body {
   .topGmsTitle {
     text-align: center;
     color: var(--platinium);
+  }
+
+  .gmTitle{
+    color: var(--powder-blue);
+    text-align: center;
+  }
+
+  .topGames{
+    display: flex;
+    margin: 15px 5px;
+  }
+
+  .topGmImg{
+    border-radius: 10px;
+    margin-right: 5px;
+  }
+
+  .gmDescription{
+    color: var(--platinium);
+    margin-left: 5px;
   }
 }
