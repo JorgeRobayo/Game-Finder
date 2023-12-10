@@ -382,15 +382,24 @@ body {
   .topGames{
     display: flex;
     margin: 15px 5px;
+    background-color: var(--light-charcoal);
+    border-radius: 10px;
+    padding: 5px;
   }
 
   .topGmImg{
     border-radius: 10px;
-    margin-right: 5px;
+    margin: 5px;
   }
 
   .gmDescription{
     color: var(--platinium);
     margin-left: 5px;
+  }
+
+  .topGamesReversed{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 15px 5px;
   }
 }
