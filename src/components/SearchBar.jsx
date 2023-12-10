@@ -13,33 +13,20 @@ function SearchBar() {
     setSearchTerm(e.target.value);
   };
 
-  const onSubmit = async (e) => {
+  const onSubmit = (e) => {
     e.preventDefault();
     let slug = searchTerm.split(" ").join("-").toLowerCase();
 
     setGameResults([]);
-    
-    try{
-      const response = await fetch (
-        `https://api.rawg.io/api/games?search=${slug}&key=270a250046034f97a6940f3241a34200`
-      );
-
-      const {results} = await response.json();
-
-      if (results === undefined) {
-
-        alert("No Games Found")
-
-      } else {
-        setGameResults(results)
-        const gameId = results.Id
-        await getGmDescription(gameId)
-      }
-
-    } catch (error) {
-      console.error(`Error fetching results`, error)
-    }
-  
+    fetch(
+      `https://api.rawg.io/api/games?search=${slug}&key=270a250046034f97a6940f3241a34200`
+    )
+      .then((resp) => resp.json())
+      .then(({ results }) => {
+        results === undefined
+          ? alert("No games found")
+          : setGameResults(results);
+      });
 
     setSearchTerm("");
   };
@@ -61,17 +48,18 @@ function SearchBar() {
       if (!response.ok){
         throw new Error(`request error ${response.status}`)
       }
-
       const gameDescResult = await response.json();
+
       console.log('API response', gameDescResult)
 
-      setCurrentData(gameDescResult)
-  } catch (error) {
-    console.error('error getting gme details:', error)
-  }
-};
+      return gameDescResult;
+      }catch (error) {
+        console.error('error:', error)
+        return null
+      }
+  };
  
-  console.log(gameResults);
+  // console.log(gameResults);
  
 
   return (
@@ -85,7 +73,7 @@ function SearchBar() {
 
         
       </div>
-      <Results gameResults={gameResults}  />
+      <Results gameResults={gameResults}  OnGameClick={handleGame}/>
   
     </div>
   );

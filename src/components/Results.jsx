@@ -14,7 +14,7 @@ function Results(props) {
             <Link
               to="/gamedetails"
               onClick={() => {
-                setCurrentData(game.id);
+                setCurrentData(game);
                 console.log(currentData);
               }}
             >
