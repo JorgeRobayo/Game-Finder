@@ -1,200 +1,199 @@
 /* Here is the color palete that I will be using */
-:root{
-    --smooth-blue: #c8d8ff;
-    --platinium: #D8DBE2;
-    --powder-blue:#A9BCD0;
-    --light-moonstone: #74c3cf;
-    --moonstone: #58A4B0;
-    --light-charcoal: #475066;
-    --charcoal: #373F51;
-    --eerie-black: #1B1B1E;
+:root {
+  --smooth-blue: #c8d8ff;
+  --platinium: #d8dbe2;
+  --powder-blue: #a9bcd0;
+  --light-moonstone: #74c3cf;
+  --moonstone: #58a4b0;
+  --light-charcoal: #475066;
+  --charcoal: #373f51;
+  --eerie-black: #1b1b1e;
 }
 
 /* -----------------{BODY}---------------------------- */
 
-body{
-    background-color: var(--eerie-black);
-    
+body {
+  background-color: var(--eerie-black);
 }
 
-::-webkit-scrollbar{
-        width:15px;
-    }
+::-webkit-scrollbar {
+  width: 15px;
+}
 
+::-webkit-scrollbar-thumb {
+  background: var(--moonstone);
+  border-radius: 10px;
+}
 
-    ::-webkit-scrollbar-thumb{
-        background: var(--moonstone);
-        border-radius: 10px;
-    }
+::-webkit-scrollbar-thumb:hover {
+  background: var(--light-moonstone);
+}
 
-    ::-webkit-scrollbar-thumb:hover{
-        background: var(--light-moonstone);
-        
-    }
+.gameContainer::-webkit-scrollbar-thumb {
+  background: var(--smooth-blue);
+}
 
-    .gameContainer::-webkit-scrollbar-thumb{
-        background: var(--smooth-blue);
-    }
-
-    .gameContainer::-webkit-scrollbar-track{
-        box-shadow: none;
-    }
-
-
+.gameContainer::-webkit-scrollbar-track {
+  box-shadow: none;
+}
 
 /* -----------{DESKTOP}--------- */
 
-@media screen and (max-width: 3000px){
-    .nav{
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        background-color: var(--charcoal);
-        padding: 20px;
-        border-radius: 10px;
-    }
-    
-    .nav a {
-        color: var(--platinium);
-        text-decoration: none;
-        font-weight: 550;
-        font-size: 20px;
-    }
+@media screen and (max-width: 3000px) {
+  .nav {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: var(--charcoal);
+    padding: 20px;
+    border-radius: 10px;
+  }
 
-    .nav a:hover{
-       color: var(--light-moonstone);
-    
-    }
-    
-    .homeInfo{
-        text-align: center;
-        font-weight: 450;
-        color: var(--platinium);
-    }
-    
-    .homeInfo p {
-        text-align: center;
-        font-weight: 450;
-        font-size: 18px;
-        color: var(--platinium);
-    }
-    
-    .homeImg{
-        width: 350px;
-        border-radius: 10px;
-    }
-    
-    .relevantInfoList{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-around;
-        list-style: none;
-    }
-    
-    .whtIsGmFndr{
-        background-color: var(--light-charcoal);
-        border-radius: 10px;
-        padding: 10px;
-        margin: 10px;
-    }
-    
-    .whyGmFndr{
-        background-color: var(--charcoal);
-        border-radius: 10px;
-        padding: 10px;
-        margin: 10px;
-    }
-    
-    /* -----{SEARCH PAGE}----- */
-    
-    .search{
-        color: var(--platinium);
-        text-align: center;
-    }
-    
-    .srchImg{
-        width: 200px;
-        border-radius: 10px;
-    }
-    
-    .gamesContainer{
+  .nav a {
+    color: var(--platinium);
+    text-decoration: none;
+    font-weight: 550;
+    font-size: 20px;
+  }
+
+  .nav a:hover {
+    color: var(--light-moonstone);
+  }
+
+  .homeInfo {
+    text-align: center;
+    font-weight: 450;
+    color: var(--platinium);
+  }
+
+  .homeInfo p {
+    text-align: center;
+    font-weight: 450;
+    font-size: 18px;
+    color: var(--platinium);
+  }
+
+  .homeImg {
+    width: 350px;
+    border-radius: 10px;
+  }
+
+  .relevantInfoList {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+  }
+
+  .whtIsGmFndr {
+    background-color: var(--light-charcoal);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .whyGmFndr {
+    background-color: var(--charcoal);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  /* -----{SEARCH PAGE}----- */
+
+  .search {
+    color: var(--platinium);
+    text-align: center;
+  }
+
+  .srchImg {
+    width: 200px;
+    border-radius: 10px;
+  }
+
+  .gamesContainer {
     overflow-x: auto;
     display: flex;
     width: 100%;
+  }
 
-    }
+  .gamesContainer a {
+    text-decoration: none;
+    color: var(--powder-blue);
+  }
 
-    .gamesContainer a{
-        text-decoration: none;
-        color: var(--powder-blue);
-    }
+  /* -------{SEARCH BAR}------ */
 
+  .searchBar {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
 
-    
-    /* -------{SEARCH BAR}------ */     
-    
-    .searchBar{
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
-    
-    /* -----{RESULTS}---- */
-    
-    .gameImg{
-        width: 200px;
-        height: 150px;
-        border-radius: 10px;
-        margin: 15px;
-    }
-    
-    .gmCard{
-        /* background-color: rgb(82, 253, 253); */
-        margin: 15px 10px;
-        border-radius: 10px;
-    }
-    
-    
-    /* -------{GAME DETAILS}---- */
-    
-    .gmScrsht{
-        width: 200px;
-        border-radius: 10px;
-        margin: 15px;
-    }
-    
-    .gmDetails{
-        color: var(--platinium);
-    }
-    
-    .mstrSection{
-        display: flex;
-        justify-content: space-around;
-        flex-direction: row;
-        margin: 10px 10px;
-        flex-wrap: wrap;
-        text-align: center;
-    }
-    
-    .gmRlsdDate, .gmRtng, .gmGnrs, .gmPltfrm, .gmStrs{
-        margin: 20px 10px;
-        background-color: var(--light-charcoal);
-        border-radius: 10px;
-        padding: 5px 20px;
-    
-    }
+  /* -----{RESULTS}---- */
 
-    .gmScrshtDiv{
+  .gameImg {
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    margin: 15px;
+  }
+
+  .gmCard {
+    /* background-color: rgb(82, 253, 253); */
+    margin: 15px 10px;
+    border-radius: 10px;
+  }
+
+  /* -------{GAME DETAILS}---- */
+
+  .gmScrsht {
+    width: 200px;
+    border-radius: 10px;
+    margin: 15px;
+  }
+
+  .gmDetails {
+    color: var(--platinium);
+  }
+
+  .mstrSection {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 10px 10px;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .gmRlsdDate,
+  .gmRtng,
+  .gmGnrs,
+  .gmPltfrm,
+  .gmStrs {
+    margin: 20px 10px;
+    background-color: var(--light-charcoal);
+    border-radius: 10px;
+    padding: 5px 20px;
+  }
+
+  .gmScrshtDiv {
     justify-content: center;
     overflow-x: auto;
     display: flex;
     width: 100%;
-    }
-    
-    .gmDetails{
-        text-align: center;
-    }
-   
+  }
+
+  .gmDetails {
+    text-align: center;
+  }
+
+  /* {Top Games Page} */
+
+  .topGmsTitle {
+    text-align: center;
+    color: var(--platinium);
+  }
 }
 
 
@@ -206,174 +205,170 @@ body{
 
 
 
-    /* ----------------{Phone Display-------------------------- */
-
-        @media screen and (max-width: 880px) {
-            .nav{
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            background-color: var(--charcoal);
-            padding: 20px;
-            border-radius: 10px;
-        }
-        
-        .nav a {
-            color: var(--platinium);
-            text-decoration: none;
-            font-weight: 550;
-            font-size: 20px;
-        }
-        
-        .nav a:hover{
-            color: var(--light-moonstone);
-         
-         }
-
-        .homeInfo{
-            text-align: center;
-            font-weight: 450;
-            color: var(--platinium);
-        }
-        
-        .homeInfo p {
-            text-align: center;
-            font-weight: 450;
-            font-size: 18px;
-            color: var(--platinium);
-        }
-        
-        .homeImg{
-            width: 350px;
-            border-radius: 10px;
-        }
-        
-        .relevantInfoList{
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
-            justify-content: space-around;
-            list-style: none;
-        }
-        
-        .whtIsGmFndr{
-            background-color: var(--light-charcoal);
-            border-radius: 10px;
-            padding: 10px;
-            margin: 10px;
-        }
-        
-        .whyGmFndr{
-            background-color: var(--charcoal);
-            border-radius: 10px;
-            padding: 10px;
-            margin: 10px;
-        }
-        
-        /* -----{SEARCH PAGE}----- */
-        
-        .search{
-            color: var(--platinium);
-            text-align: center;
-        }
-        
-        .srchImg{
-            width: 200px;
-            border-radius: 10px;
-        }
-        
-        .gamesContainer{
-            overflow-x: auto;
-            display: flex;
-            width: 100%;
-        }
-        
-        .gamesContainer a{
-            text-decoration: none;
-            color: var(--platinium);
-        }
-        
-        /* -------{SEARCH BAR}------ */     
-        
-        .searchBar{
-            margin-top: 15px;
-        }
-        
-        /* -----{RESULTS}---- */
-        
-        .gameImg{
-            width: 200px;
-            border-radius: 10px;
-            margin: 15px;
-        }
-        
-        .gmCard{
-            /* background-color: rgb(82, 253, 253); */
-            margin: 15px 10px;
-            border-radius: 10px;
-        }
-        
-        
-        /* -------{GAME DETAILS}---- */
-        
-        .gmScrsht{
-            width: 200px;
-            border-radius: 10px;
-            margin: 15px;
-        }
-        
-        .gmDetails{
-            color: var(--platinium);
-        }
-        
-        .mstrSection{
-            display: flex;
-            justify-content: space-around;
-            flex-direction: row;
-            margin: 10px 10px;
-            flex-wrap: wrap;
-            text-align: center;
-        }
-        
-        .gmRlsdDate, .gmRtng, .gmGnrs, .gmPltfrm, .gmStrs{
-            margin: 20px 10px;
-            background-color: var(--light-charcoal);
-            border-radius: 10px;
-            padding: 5px 20px;
-        
-        }
-        
-        .gmScrshtDiv{
-            display: flex;
-            flex-direction: row;
-            
-            
-        }
-
-        .gmScrshtDiv{
-            justify-content: center;
-            overflow-x: auto;
-            display: flex;
-            width: 100%;
-            }
-            
-            .gmDetails{
-                text-align: center;
-            }
-        
-        }
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
 
 
+
+
+
+
+/* ----------------{Phone Display-------------------------- */
+
+@media screen and (max-width: 880px) {
+  .nav {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: var(--charcoal);
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .nav a {
+    color: var(--platinium);
+    text-decoration: none;
+    font-weight: 550;
+    font-size: 20px;
+  }
+
+  .nav a:hover {
+    color: var(--light-moonstone);
+  }
+
+  .homeInfo {
+    text-align: center;
+    font-weight: 450;
+    color: var(--platinium);
+  }
+
+  .homeInfo p {
+    text-align: center;
+    font-weight: 450;
+    font-size: 18px;
+    color: var(--platinium);
+  }
+
+  .homeImg {
+    width: 350px;
+    border-radius: 10px;
+  }
+
+  .relevantInfoList {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+  }
+
+  .whtIsGmFndr {
+    background-color: var(--light-charcoal);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .whyGmFndr {
+    background-color: var(--charcoal);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  /* -----{SEARCH PAGE}----- */
+
+  .search {
+    color: var(--platinium);
+    text-align: center;
+  }
+
+  .srchImg {
+    width: 200px;
+    border-radius: 10px;
+  }
+
+  .gamesContainer {
+    overflow-x: auto;
+    display: flex;
+    width: 100%;
+  }
+
+  .gamesContainer a {
+    text-decoration: none;
+    color: var(--platinium);
+  }
+
+  /* -------{SEARCH BAR}------ */
+
+  .searchBar {
+    margin-top: 15px;
+  }
+
+  /* -----{RESULTS}---- */
+
+  .gameImg {
+    width: 200px;
+    border-radius: 10px;
+    margin: 15px;
+  }
+
+  .gmCard {
+    /* background-color: rgb(82, 253, 253); */
+    margin: 15px 10px;
+    border-radius: 10px;
+  }
+
+  /* -------{GAME DETAILS}---- */
+
+  .gmScrsht {
+    width: 200px;
+    border-radius: 10px;
+    margin: 15px;
+  }
+
+  .gmDetails {
+    color: var(--platinium);
+  }
+
+  .mstrSection {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 10px 10px;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .gmRlsdDate,
+  .gmRtng,
+  .gmGnrs,
+  .gmPltfrm,
+  .gmStrs {
+    margin: 20px 10px;
+    background-color: var(--light-charcoal);
+    border-radius: 10px;
+    padding: 5px 20px;
+  }
+
+  .gmScrshtDiv {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .gmScrshtDiv {
+    justify-content: center;
+    overflow-x: auto;
+    display: flex;
+    width: 100%;
+  }
+
+  .gmDetails {
+    text-align: center;
+  }
+
+  /* {Top Games Page} */
+
+  .topGmsTitle {
+    text-align: center;
+    color: var(--platinium);
+  }
+}
