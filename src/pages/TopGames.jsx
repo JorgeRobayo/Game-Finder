@@ -203,16 +203,21 @@ function TopGames() {
 
           <div className="gmDescription">
             <h3>
-              Planned as the first chapter of a trilogy, Mass Effect was
-              developed over the course of three and a half years, and uses the
-              Unreal Engine 3 as a groundwork. It was designed so that the
-              player would assume the role of a central character that could
-              make important decisions and impact the story of the game in
-              numerous ways. The combat was designed to offer the tactics and
-              customization of a role-playing game, but through a simpler and
-              real-time third-person shooter interface. In 2008 and 2009, two
-              downloadable content packs that introduced new missions to the
-              base game were released.
+              BioShock Infinite is a first-person shooter video game in the
+              BioShock series, developed by Irrational Games and published by
+              2K. Infinite was released worldwide for the PlayStation 3,
+              Windows, Xbox 360, and OS X platforms in 2013. The game is set in
+              the year 1912 and follows its protagonist, Booker DeWitt, who is
+              sent to the airborne city Columbia to retrieve Elizabeth, a young
+              woman held captive there. Booker and Elizabeth become involved in
+              a class war between the nativist Founders that rule Columbia and
+              the rebel Vox Populi, representing the city's underclass.
+              Elizabeth possesses the ability to manipulate "Tears" in the
+              space-time continuum, and Booker and Elizabeth discover she is
+              central to Columbia's dark secrets. The player controls Booker
+              DeWitt throughout the game, fighting enemies and scavenging
+              supplies, while the computer-controlled Elizabeth provides
+              assistance.
             </h3>
           </div>
         </section>
@@ -223,6 +228,71 @@ function TopGames() {
             conservative movement and seen its populace succumb to racism and
             xenophobia. Couldn't happen anywhere but in Columbia, could it?
           </h3>
+        </section>
+      </div>
+
+      <h2 className="gmTitle">Fortnite (2017)</h2>
+
+      <div className="cntnrReverse">
+        <section id="game2" className="topGamesReversed">
+          <div className="topGmImgDiv">
+            <div className="fortniteImgs">
+              <img
+                id="forniteImg"
+                className="topGmImg"
+                src={
+                  "https://cdn2.unrealengine.com/Fortnite%2FEng_SocialOutlookScreen-1920x1080-618fab3fd31219e3a45a49032f7148de32ab1cfe.jpg"
+                }
+                alt=""
+              />
+              <img
+                id="forniteImg2"
+                className="topGmImg"
+                src={
+                  "https://media.gq-magazine.co.uk/photos/645b4218ec043c4e3762bdfc/master/w_960,c_limit/100%20best%20games_0019_Fortnite.jpg"
+                }
+                alt=""
+              />
+              <img
+                id="forniteImg3"
+                className="topGmImg"
+                src={
+                  "https://i.ytimg.com/vi/OiG8DuoHVVk/maxresdefault.jpg"
+                }
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div className="gmDescription">
+            <h3>
+              Grand Theft Auto V is a 2013 action-adventure game developed by
+              Rockstar North and published by Rockstar Games. It is the seventh
+              main entry in the Grand Theft Auto series, following 2008's Grand
+              Theft Auto IV, and the fifteenth instalment overall. Set within
+              the fictional state of San Andreas, based on Southern California,
+              the single-player story follows three protagonists—retired bank
+              robber Michael De Santa, street gangster Franklin Clinton, and
+              drug dealer and gunrunner Trevor Philips—and their attempts to
+              commit heists while under pressure from a corrupt government
+              agency and powerful criminals. The open world design lets players
+              freely roam San Andreas's open countryside and the fictional city
+              of Los Santos, based on Los Angeles.
+            </h3>
+
+            <h3>
+              Grand Theft Auto V is an action-adventure game played from either
+              a third-person or first-person perspective. Players complete
+              missions—linear scenarios with set objectives—to progress through
+              the story. Outside of the missions, players may freely roam the
+              open world. Composed of the San Andreas open countryside area,
+              including the fictional Blaine County, and the fictional city of
+              Los Santos, the world is much larger in area than earlier entries
+              in the series. It may be fully explored after the game's beginning
+              without restriction, although story progress unlocks more gameplay
+              content.
+            </h3>
+          </div>
         </section>
       </div>
     </div>

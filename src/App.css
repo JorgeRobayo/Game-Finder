@@ -411,6 +411,17 @@ body {
     
   }
 
+  #forniteImg{
+    width: 300px;
+  }
+
+  #forniteImg2{
+    width: 300px;
+  }
+  #forniteImg3{
+    width: 300px;
+  }
+
   .gmDescription{
     color: var(--platinium);
     margin-left: 5px;
