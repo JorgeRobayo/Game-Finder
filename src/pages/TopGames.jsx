@@ -172,18 +172,57 @@ function TopGames() {
             </h3>
 
             <h3>
-              Grand Theft Auto V is an action-adventure game played from
-              either a third-person or first-person perspective.
-              Players complete missions—linear scenarios with set objectives—to
-              progress through the story. Outside of the missions, players
-              may freely roam the open world. Composed of the San Andreas open
-              countryside area, including the fictional Blaine County, and the
-              fictional city of Los Santos, the world is much larger in area
-              than earlier entries in the series. It may be fully explored
-              after the game's beginning without restriction, although story
-              progress unlocks more gameplay content.
+              Grand Theft Auto V is an action-adventure game played from either
+              a third-person or first-person perspective. Players complete
+              missions—linear scenarios with set objectives—to progress through
+              the story. Outside of the missions, players may freely roam the
+              open world. Composed of the San Andreas open countryside area,
+              including the fictional Blaine County, and the fictional city of
+              Los Santos, the world is much larger in area than earlier entries
+              in the series. It may be fully explored after the game's beginning
+              without restriction, although story progress unlocks more gameplay
+              content.
             </h3>
           </div>
+        </section>
+      </div>
+
+      <h2 className="gmTitle">Bioshock Infinite (2013)</h2>
+
+      <div className="cntnrtRight">
+        <section id="game3" className="topGames">
+          <div className="topGmImgDiv">
+            <img
+              className="topGmImg"
+              src={
+                "https://upload.wikimedia.org/wikipedia/en/a/a3/Official_cover_art_for_Bioshock_Infinite.jpg"
+              }
+              alt=""
+            />
+          </div>
+
+          <div className="gmDescription">
+            <h3>
+              Planned as the first chapter of a trilogy, Mass Effect was
+              developed over the course of three and a half years, and uses the
+              Unreal Engine 3 as a groundwork. It was designed so that the
+              player would assume the role of a central character that could
+              make important decisions and impact the story of the game in
+              numerous ways. The combat was designed to offer the tactics and
+              customization of a role-playing game, but through a simpler and
+              real-time third-person shooter interface. In 2008 and 2009, two
+              downloadable content packs that introduced new missions to the
+              base game were released.
+            </h3>
+          </div>
+        </section>
+
+        <section>
+          <h3 id="game1Description2" className="gmDescription">
+            A nation overrun by religious zealotry that's infiltrated the
+            conservative movement and seen its populace succumb to racism and
+            xenophobia. Couldn't happen anywhere but in Columbia, could it?
+          </h3>
         </section>
       </div>
     </div>
