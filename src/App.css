@@ -200,6 +200,129 @@ body {
     text-align: center;
     /* color: var(--platinium); */
   }
+
+   /* -------{GAME DETAILS}---- */
+
+   .gmScrsht {
+    width: 200px;
+    border-radius: 10px;
+    margin: 15px;
+  }
+
+  .gmDetails {
+    color: var(--platinium);
+  }
+
+  .mstrSection {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 10px 10px;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .gmRlsdDate,
+  .gmRtng,
+  .gmGnrs,
+  .gmPltfrm,
+  .gmStrs {
+    margin: 20px 10px;
+    background-color: var(--light-charcoal);
+    border-radius: 10px;
+    padding: 5px 20px;
+  }
+
+  .gmScrshtDiv {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .gmScrshtDiv {
+    justify-content: center;
+    overflow-x: auto;
+    display: flex;
+    width: 100%;
+  }
+
+  .gmDetails {
+    text-align: center;
+  }
+
+  /* {Top Games Page} */
+
+  /* .topGmsMstrDiv{
+    
+  } */
+
+  .headerImgSection{
+    text-align: center;
+  }
+
+  .headerImg{
+    width: 550px;
+    border-radius: 10px;
+  }
+
+
+  .topGmsTitle {
+    text-align: center;
+    color: var(--platinium);
+  }
+
+  .gmTitle{
+    color: var(--powder-blue);
+    text-align: center;
+  }
+
+  .topGames{
+    display: flex;
+    margin: 15px 5px;
+    border-radius: 10px;
+    padding: 5px;
+  }
+
+  .topGmImgDiv{
+    display: flex;
+    align-items: center;
+  }
+
+  .topGmImg{
+    border-radius: 10px;
+    margin: 5px;
+    
+  }
+
+  #forniteImg{
+    width: 300px;
+  }
+
+  #forniteImg2{
+    width: 300px;
+  }
+  #forniteImg3{
+    width: 300px;
+  }
+
+  .gmDescription{
+    color: var(--platinium);
+    margin-left: 5px;
+  }
+
+  .topGamesReversed{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 15px 5px;
+  }
+  .cntnrtRight{
+    background-color: var(--light-charcoal);
+    border-radius: 10px;
+  }
+
+  .cntnrReverse{
+    background-color: var(--charcoal);
+    border-radius: 10px;
+  }
 }
 
 
