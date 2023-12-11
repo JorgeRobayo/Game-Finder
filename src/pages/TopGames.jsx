@@ -326,7 +326,7 @@ function TopGames() {
         </section>
       </div>
 
-      <h2 className="gmTitle">Grand Theft Auto V (2013) </h2>
+      <h2 className="gmTitle">Call of Duty 4: Modern Warfare (2007) </h2>
 
       <div className="cntnrReverse">
         <section id="game2" className="topGamesReversed">
@@ -361,6 +361,44 @@ function TopGames() {
               Zone's undergrowth remains unforgettably harrowing.
             </h3>
           </div>
+        </section>
+      </div>
+
+      <h2 className="gmTitle">The Legend of Zelda: Majora's Mask (2000)</h2>
+
+      <div className="cntnrtRight">
+        <section id="game3" className="topGames">
+          <div className="topGmImgDiv">
+            <img
+              className="topGmImg"
+              src={
+                "https://upload.wikimedia.org/wikipedia/en/6/60/The_Legend_of_Zelda_-_Majora%27s_Mask_Box_Art.jpg"
+              }
+              alt=""
+            />
+          </div>
+
+          <div className="gmDescription">
+            <h3>
+              The Legend of Zelda: Majora's Mask[a] is a 2000 action-adventure
+              game developed and published by Nintendo for the Nintendo 64. It
+              was the second The Legend of Zelda game to use 3D graphics,
+              following Ocarina of Time (1998). Designed by a creative team led
+              by Eiji Aonuma, Yoshiaki Koizumi, and Shigeru Miyamoto, Majora's
+              Mask was completed in less than two years. It featured enhanced
+              graphics and several gameplay changes, but reused a number of
+              elements and character models, which the game's creators called a
+              creative decision made necessary by time constraints.
+            </h3>
+          </div>
+        </section>
+
+        <section>
+          <h3 id="game1Description2" className="gmDescription">
+            What's there left to achieve after you've made (what was) the
+            undisputed gaming GOAT in Ocarina Of Time? Scar an entire generation
+            with cosmic nightmare fuel, of course.
+          </h3>
         </section>
       </div>
     </div>
