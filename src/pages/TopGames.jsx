@@ -421,13 +421,12 @@ function TopGames() {
               The Sims 2 is a 2004 strategic life simulation video game
               developed by Maxis and published by Electronic Arts. It is the
               second major title in The Sims series, and is the sequel to The
-              Sims. The game was released for Microsoft Windows on September
-              14, 2004, and a port for MacOS was released on June 17, 2005.
-              Eight expansion packs and nine "stuff packs" were subsequently
-              released between 2005 and 2008. In addition, versions of The
-              Sims 2 were released on various consoles and mobile platforms,
-              including the Nokia Ovi Store. A sequel, The Sims 3, was released
-              in June 2009.
+              Sims. The game was released for Microsoft Windows on September 14,
+              2004, and a port for MacOS was released on June 17, 2005. Eight
+              expansion packs and nine "stuff packs" were subsequently released
+              between 2005 and 2008. In addition, versions of The Sims 2 were
+              released on various consoles and mobile platforms, including the
+              Nokia Ovi Store. A sequel, The Sims 3, was released in June 2009.
             </h3>
 
             <h3>
@@ -441,6 +440,44 @@ function TopGames() {
               industry.
             </h3>
           </div>
+        </section>
+      </div>
+
+      <h2 className="gmTitle">Inside (2016)</h2>
+
+      <div className="cntnrtRight">
+        <section id="game3" className="topGames">
+          <div className="topGmImgDiv">
+            <img
+              className="topGmImg"
+              src={
+                "https://upload.wikimedia.org/wikipedia/en/5/50/INSIDE_Xbox_One_cover_art.png"
+              }
+              alt=""
+            />
+          </div>
+
+          <div className="gmDescription">
+            <h3>
+              Inside is a puzzle-platform game developed and published by
+              Playdead in 2016, and was released on June 29, for Xbox One,
+              Windows, on July 7, and August 23, for PlayStation 4. The game was
+              released for iOS in December 2017 and Nintendo Switch in June
+              2018. A macOS version was released in June 2020. The player
+              controls a boy in a dystopic world, solving environmental puzzles
+              and avoiding death. It is the successor to Playdead's 2010 Limbo,
+              with similar 2.5D gameplay.
+            </h3>
+          </div>
+        </section>
+
+        <section>
+          <h3 id="game1Description2" className="gmDescription">
+            One of the most bizarre, horrifying and unexpected endings in all of
+            gaming, Inside's noir aesthetic and lonely atmosphere are in keeping
+            with Playdead's debut, Limbo, but it ratchets up the mechanical and
+            design craft to make this a clear standout.
+          </h3>
         </section>
       </div>
     </div>
