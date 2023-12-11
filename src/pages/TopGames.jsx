@@ -295,7 +295,7 @@ function TopGames() {
             <img
               className="topGmImg"
               src={
-                "https://upload.wikimedia.org/wikipedia/en/a/a3/Official_cover_art_for_Bioshock_Infinite.jpg"
+                "https://upload.wikimedia.org/wikipedia/en/4/41/Tony_Hawk%27s_Pro_Skater_2_cover.png"
               }
               alt=""
             />
@@ -303,21 +303,15 @@ function TopGames() {
 
           <div className="gmDescription">
             <h3>
-              BioShock Infinite is a first-person shooter video game in the
-              BioShock series, developed by Irrational Games and published by
-              2K. Infinite was released worldwide for the PlayStation 3,
-              Windows, Xbox 360, and OS X platforms in 2013. The game is set in
-              the year 1912 and follows its protagonist, Booker DeWitt, who is
-              sent to the airborne city Columbia to retrieve Elizabeth, a young
-              woman held captive there. Booker and Elizabeth become involved in
-              a class war between the nativist Founders that rule Columbia and
-              the rebel Vox Populi, representing the city's underclass.
-              Elizabeth possesses the ability to manipulate "Tears" in the
-              space-time continuum, and Booker and Elizabeth discover she is
-              central to Columbia's dark secrets. The player controls Booker
-              DeWitt throughout the game, fighting enemies and scavenging
-              supplies, while the computer-controlled Elizabeth provides
-              assistance.
+              Tony Hawk's Pro Skater 2 is a 2000 skateboarding video game
+              developed by Neversoft and published by Activision. It is the
+              second installment in the Tony Hawk's series of sports games and
+              was released for the PlayStation in 2000, with subsequent ports to
+              Microsoft Windows, Game Boy Color, and Dreamcast the same year. In
+              2001, the game was ported to the Mac OS, Game Boy Advance,
+              Nintendo 64, and Xbox (as part of Tony Hawk's Pro Skater 2x). The
+              game was later ported to Windows Mobile and Windows Phone devices
+              in 2006 and to iOS devices in 2010.
             </h3>
           </div>
         </section>
