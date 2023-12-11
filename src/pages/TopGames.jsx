@@ -401,6 +401,48 @@ function TopGames() {
           </h3>
         </section>
       </div>
+
+      <h2 className="gmTitle">The Sims 2 (2004)</h2>
+
+      <div className="cntnrReverse">
+        <section id="game2" className="topGamesReversed">
+          <div className="topGmImgDiv">
+            <img
+              className="topGmImg"
+              src={
+                "https://upload.wikimedia.org/wikipedia/en/b/bd/The_sims_2.jpg"
+              }
+              alt=""
+            />
+          </div>
+
+          <div className="gmDescription">
+            <h3>
+              The Sims 2 is a 2004 strategic life simulation video game
+              developed by Maxis and published by Electronic Arts. It is the
+              second major title in The Sims series, and is the sequel to The
+              Sims. The game was released for Microsoft Windows on September
+              14, 2004, and a port for MacOS was released on June 17, 2005.
+              Eight expansion packs and nine "stuff packs" were subsequently
+              released between 2005 and 2008. In addition, versions of The
+              Sims 2 were released on various consoles and mobile platforms,
+              including the Nokia Ovi Store. A sequel, The Sims 3, was released
+              in June 2009.
+            </h3>
+
+            <h3>
+              There's more to The Sims 2's considerable legacy than its appeal
+              beyond what was then the gaming's core demographic of
+              Kalashnikov-loving young men. Given how this sequel doubled down
+              on appealing to players outside such a narrow bubble - The Sims 4
+              currently claims 60 per cent of its audience is women between the
+              ages of 18 and 24 - we'd be remiss in not celebrating such a
+              pioneering approach in what can still be a depressingly insular
+              industry.
+            </h3>
+          </div>
+        </section>
+      </div>
     </div>
   );
 }
