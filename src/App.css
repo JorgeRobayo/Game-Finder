@@ -373,6 +373,16 @@ body {
 
   /* {Top Games Page} */
 
+  .headerImgSection{
+    text-align: center;
+  }
+
+  .headerImg{
+    width: 550px;
+    border-radius: 10px;
+  }
+
+
   .topGmsTitle {
     text-align: center;
     color: var(--platinium);
