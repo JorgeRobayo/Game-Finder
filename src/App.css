@@ -400,9 +400,15 @@ body {
     padding: 5px;
   }
 
+  .topGmImgDiv{
+    display: flex;
+    align-items: center;
+  }
+
   .topGmImg{
     border-radius: 10px;
     margin: 5px;
+    
   }
 
   .gmDescription{

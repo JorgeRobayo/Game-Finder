@@ -140,6 +140,52 @@ function TopGames() {
           </h3>
         </section>
       </div>
+
+      <h2 className="gmTitle">Grand Theft Auto V (2013) </h2>
+
+      <div className="cntnrReverse">
+        <section id="game2" className="topGamesReversed">
+          <div className="topGmImgDiv">
+            <img
+              className="topGmImg"
+              src={
+                "https://upload.wikimedia.org/wikipedia/en/a/a5/Grand_Theft_Auto_V.png"
+              }
+              alt=""
+            />
+          </div>
+
+          <div className="gmDescription">
+            <h3>
+              Grand Theft Auto V is a 2013 action-adventure game developed by
+              Rockstar North and published by Rockstar Games. It is the seventh
+              main entry in the Grand Theft Auto series, following 2008's Grand
+              Theft Auto IV, and the fifteenth instalment overall. Set within
+              the fictional state of San Andreas, based on Southern California,
+              the single-player story follows three protagonists—retired bank
+              robber Michael De Santa, street gangster Franklin Clinton, and
+              drug dealer and gunrunner Trevor Philips—and their attempts to
+              commit heists while under pressure from a corrupt government
+              agency and powerful criminals. The open world design lets players
+              freely roam San Andreas's open countryside and the fictional city
+              of Los Santos, based on Los Angeles.
+            </h3>
+
+            <h3>
+              Grand Theft Auto V is an action-adventure game played from
+              either a third-person or first-person perspective.
+              Players complete missions—linear scenarios with set objectives—to
+              progress through the story. Outside of the missions, players
+              may freely roam the open world. Composed of the San Andreas open
+              countryside area, including the fictional Blaine County, and the
+              fictional city of Los Santos, the world is much larger in area
+              than earlier entries in the series. It may be fully explored
+              after the game's beginning without restriction, although story
+              progress unlocks more gameplay content.
+            </h3>
+          </div>
+        </section>
+      </div>
     </div>
   );
 }
