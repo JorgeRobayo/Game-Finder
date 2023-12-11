@@ -2,7 +2,7 @@ import React from "react";
 
 function TopGames() {
   return (
-    <div className="topGmsMstrDiv">
+    <div>
       <section className="topGmsTitle">
         <h1>Top Games of all Time</h1>
       </section>
@@ -16,8 +16,9 @@ function TopGames() {
           alt=""
         />
       </section>
-
-      <h2 className="gmTitle">Age Of Empires II: The Age of Kings (1999)</h2>
+        
+      <section className="ageEmpire">
+        <h2 className="gmTitle">Age Of Empires II: The Age of Kings (1999)</h2>
 
       <div className="cntnrtRight">
         <section id="game1" className="topGames">
@@ -63,8 +64,10 @@ function TopGames() {
           </h3>
         </section>
       </div>
-
-      <h2 className="gmTitle">Super Mario Bros (1985)</h2>
+      </section>
+      
+      <section className="marioBros">
+        <h2 className="gmTitle">Super Mario Bros (1985)</h2>
 
       <div className="cntnrReverse">
         <section id="game2" className="topGamesReversed">
@@ -99,8 +102,10 @@ function TopGames() {
           </div>
         </section>
       </div>
-
-      <h2 className="gmTitle">Mass Effect (2007)</h2>
+      </section>
+      
+      <section className="massEffect">
+          <h2 className="gmTitle">Mass Effect (2007)</h2>
 
       <div className="cntnrtRight">
         <section id="game3" className="topGames">
@@ -139,9 +144,11 @@ function TopGames() {
             best moments were yet to come.
           </h3>
         </section>
-      </div>
-
-      <h2 className="gmTitle">Grand Theft Auto V (2013) </h2>
+      </div> 
+      </section>
+   
+      <section className="GTA">
+          <h2 className="gmTitle">Grand Theft Auto V (2013) </h2>
 
       <div className="cntnrReverse">
         <section id="game2" className="topGamesReversed">
@@ -186,7 +193,9 @@ function TopGames() {
           </div>
         </section>
       </div>
-
+      </section>
+    
+      <section className=""></section>
       <h2 className="gmTitle">Bioshock Infinite (2013)</h2>
 
       <div className="cntnrtRight">
