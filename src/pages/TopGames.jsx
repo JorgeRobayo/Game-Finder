@@ -325,6 +325,44 @@ function TopGames() {
           </h3>
         </section>
       </div>
+
+      <h2 className="gmTitle">Grand Theft Auto V (2013) </h2>
+
+      <div className="cntnrReverse">
+        <section id="game2" className="topGamesReversed">
+          <div className="topGmImgDiv">
+            <img
+              className="topGmImg"
+              src={
+                "https://upload.wikimedia.org/wikipedia/en/5/5f/Call_of_Duty_4_Modern_Warfare.jpg"
+              }
+              alt=""
+            />
+          </div>
+
+          <div className="gmDescription">
+            <h3>
+              Call of Duty 4: Modern Warfare is a 2007 first-person shooter
+              video game developed by Infinity Ward and published by Activision.
+              It is the fourth main installment in the Call of Duty series. The
+              game breaks away from the World War II setting of previous entries
+              and is instead set in modern times. Developed over two years,
+              Modern Warfare was released in November 2007 for the PlayStation
+              3, Xbox 360, and Microsoft Windows and was ported to the Wii as
+              Call of Duty: Modern Warfare - Reflex Edition in 2009.
+            </h3>
+
+            <h3>
+              A relentlessly lean campaign, and a multiplayer mode that would
+              change online gaming forever, Modern Warfare took the Call of Duty
+              franchise from the battlefields of World War II and Vietnam and
+              gave it a colder, more nuanced ethos. Because what if war isn't
+              always fun? Its Pripyat mission through the Chernobyl Exclusion
+              Zone's undergrowth remains unforgettably harrowing.
+            </h3>
+          </div>
+        </section>
+      </div>
     </div>
   );
 }
